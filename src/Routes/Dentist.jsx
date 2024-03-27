@@ -8,9 +8,9 @@ const Dentist = () => {
   useEffect(() => {
     const fetchDentist = async () => {
       try {
-        const response = await fetch(`https://randomuser.me/api/`);
+        const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`); 
         const data = await response.json();
-        setDentist(data.results[0]); 
+        setDentist(data);
       } catch (error) {
         console.error('Error fetching dentist data:', error);
       }
@@ -19,23 +19,22 @@ const Dentist = () => {
   }, [id]); 
 
   if (!dentist) {
-    return <div>Cargando...</div>;
+    return <div>Loading...</div>; 
   }
 
   const { name, email, phone, website } = dentist;
 
   return (
-    <>
-      <div>
-        <h1>Detail Dentist</h1>
-        <p>Name: {name.first} {name.last}</p>
-        <p>Email: {email}</p>
-        <p>Phone: {phone}</p>
-        <p>Website: {website}</p>
-      </div>
-    </>
+    <div>
+      <h1>Detail Dentist</h1>
+      <p>Name: {name}</p>
+      <p>Email: {email}</p>
+      <p>Phone: {phone}</p>
+      <p>Website: {website}</p>
+    </div>
   )
 }
 
 export default Dentist;
+
 
