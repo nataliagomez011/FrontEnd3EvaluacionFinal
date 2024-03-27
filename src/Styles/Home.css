@@ -1,0 +1,43 @@
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    background-color: white;
+  }
+  
+  .main {
+    padding: 2rem;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .card-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    transition: border-color 0.3s ease;
+  }
+  
+  .card:hover {
+    border-color: rgb(206, 217, 142);
+  }
+  
+  .card a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  body{
+    background-color: white;
+    color: white;
+  }
+  

@@ -1,0 +1,43 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 1rem;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    margin-bottom: 0.25rem;
+  }
+  
+  .favButton {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .favButton:hover {
+    background-color: #e0e0e0;
+  }
+
+  body{
+    background-color: white;
+  }
+  
+  
